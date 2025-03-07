@@ -1,14 +1,16 @@
 package claseTripulacion;
 
 
+import java.util.Random;
+
 public class Minero extends Tripulacion{
 private String codigo;
 private int edad;
 private static int cont=0;
-public Minero(String a, String b, int e){
-    super(a,b,0);
+public Minero(){
+    super(0);
     codigo=generarCodigo();
-    edad=e;
+    edad=generarNumeroRandom();
     }
 
 public String generarCodigo() {
@@ -20,6 +22,11 @@ public String generarCodigo() {
         }
         cod+=c;
         return "min"+cod;    
+    }
+
+    public static int generarNumeroRandom() {
+        Random random = new Random();
+        return random.nextInt(50) + 18;  // Números entre 1 y 9
     }
 
 

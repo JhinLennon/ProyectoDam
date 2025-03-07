@@ -18,6 +18,12 @@ public abstract class Tripulacion {
         nombre=Nombres.darNombre();
         genero=Nombres.getGenero();
         fuerza=generarNumeroRandom();
+
+    }
+    public Tripulacion(int a) {
+        nombre = Nombres.darNombre();
+        genero = Nombres.getGenero();
+        fuerza = a;
     }
     public Tripulacion(String a, String b, int d){
         nombre=a;
