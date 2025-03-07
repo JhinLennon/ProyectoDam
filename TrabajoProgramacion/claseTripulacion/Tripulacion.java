@@ -5,16 +5,20 @@ import java.util.Random;
 
 public abstract class Tripulacion {
 
-    private String nombre;
-    private String genero;
-    private int fuerza;
+    public String nombre;
+    public String genero;
+    public int fuerza;
 
     public Tripulacion(String a, String b){
         nombre=a;
         genero=b;
         fuerza=generarNumeroRandom();
-    }//yoooo voy a apagar yaa bale uwuuuuu
-    public tr
+    }
+    public Tripulacion(){
+        nombre=Nombres.darNombre();
+        genero=Nombres.getGenero();
+        fuerza=generarNumeroRandom();
+    }
     public Tripulacion(String a, String b, int d){
         nombre=a;
         genero=b;
@@ -23,5 +27,17 @@ public abstract class Tripulacion {
     public static int generarNumeroRandom() {
         Random random = new Random();
         return random.nextInt(9) + 1;  // Números entre 1 y 9
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public int getFuerza() {
+        return fuerza;
     }
 }

@@ -1,11 +1,11 @@
 package claseTripulacion;
 
 public class Soldado extends Tripulacion{
-private String codigo;
-private int graduacion;
-private static int cont=0;
-public Soldado(String a, String b, int c){
-super(a,b);
+public String codigo;
+public int graduacion;
+public static int cont=0;
+public Soldado(int c){
+super();
 graduacion=c;
 codigo=generarCodigo();
 }

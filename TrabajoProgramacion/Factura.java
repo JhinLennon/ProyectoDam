@@ -1,4 +1,4 @@
-public class Factura(){
+public class Factura{
     private double[][] matriz;
 
     //Constructor, va a recibir una matriz cuadrada de costes
