@@ -32,7 +32,7 @@ public class Pantalla extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(104, 112, 137));
+        jPanel1.setBackground(new java.awt.Color(75, 82, 103));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(16, 21, 33), 5));
 
         progreso.setBackground(new java.awt.Color(255, 255, 255));

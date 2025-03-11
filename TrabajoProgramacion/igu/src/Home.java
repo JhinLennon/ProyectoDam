@@ -43,35 +43,66 @@ public class Home extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(153, 204, 255));
         jLabel1.setText("Western Moon");
 
+        cap1.setBackground(new java.awt.Color(130, 130, 255));
+        cap1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        cap1.setForeground(new java.awt.Color(255, 255, 255));
         cap1.setText("Capítulo 1");
+        cap1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 255), 7));
+        cap1.setDefaultCapable(false);
+        cap1.setFocusable(false);
         cap1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cap1ActionPerformed(evt);
             }
         });
 
-        cap2.setText("Capítulo 2");
+        cap2.setBackground(new java.awt.Color(130, 130, 255));
+        cap2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        cap2.setForeground(new java.awt.Color(255, 255, 255));
+        cap2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 255), 7));
+        cap2.setDefaultCapable(false);
+        cap2.setFocusable(false);
+        cap2.setLabel("Capítulo 2");
         cap2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cap2ActionPerformed(evt);
             }
         });
 
-        cap3.setText("Capítulo 3");
+        cap3.setBackground(new java.awt.Color(130, 130, 255));
+        cap3.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        cap3.setForeground(new java.awt.Color(255, 255, 255));
+        cap3.setActionCommand("Capítulo 3");
+        cap3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 255), 7));
+        cap3.setDefaultCapable(false);
+        cap3.setFocusable(false);
+        cap3.setLabel("Capítulo 3");
         cap3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cap3ActionPerformed(evt);
             }
         });
 
-        cap4.setText("Capítulo 4");
+        cap4.setBackground(new java.awt.Color(130, 130, 255));
+        cap4.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        cap4.setForeground(new java.awt.Color(255, 255, 255));
+        cap4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 255), 7));
+        cap4.setDefaultCapable(false);
+        cap4.setFocusable(false);
+        cap4.setLabel("Capítulo 4");
         cap4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cap4ActionPerformed(evt);
             }
         });
 
-        cap5.setText("Capítulo 5");
+        cap5.setBackground(new java.awt.Color(130, 130, 255));
+        cap5.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        cap5.setForeground(new java.awt.Color(255, 255, 255));
+        cap5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 255), 7));
+        cap5.setDefaultCapable(false);
+        cap5.setFocusable(false);
+        cap5.setLabel("Capítulo 5");
         cap5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cap5ActionPerformed(evt);
@@ -84,23 +115,24 @@ public class Home extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(49, 49, 49)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(cap3, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cap1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(cap2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cap4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(cap1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(cap2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(cap3, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(cap4, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(49, 49, 49))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(144, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(143, 143, 143))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(cap5, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(252, 252, 252))))
+                .addComponent(jLabel1)
+                .addGap(143, 143, 143))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(253, 253, 253)
+                .addComponent(cap5, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -111,13 +143,13 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cap2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cap1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addComponent(cap5, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cap3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cap4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(106, Short.MAX_VALUE))
+                .addGap(86, 86, 86))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -134,10 +166,6 @@ public class Home extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void cap2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cap2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cap2ActionPerformed
-
     private void cap3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cap3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cap3ActionPerformed
@@ -145,6 +173,10 @@ public class Home extends javax.swing.JFrame {
     private void cap4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cap4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cap4ActionPerformed
+
+    private void cap2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cap2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cap2ActionPerformed
 
     private void cap5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cap5ActionPerformed
         // TODO add your handling code here:

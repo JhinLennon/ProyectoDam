@@ -1,8 +1,5 @@
 import java.util.*;
 import claseTripulacion.*;
-import claseVehiculo.*;
-import claseAlien.*;
-import igu.*;
 
 public class Main {
         static Scanner sc= new Scanner(System.in);
